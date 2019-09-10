@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gathersdom</title>
+</head>
+<style>
+    body {
+        margin: 1em auto;
+        max-width: 40em;
+        padding: 0 .62em;
+        font: 1.2em/1.62 sans-serif;
+    }
+
+    h1,
+    h2,
+    h3 {
+        line-height: 1.2;
+    }
+
+    @media print {
+        body {
+            max-width: none;
+        }
+    }
+
+    li:hover {
+        animation: slide-right .5s linear both;
+    }
+
+    @keyframes slide-right {
+        0% {
+            transform: translateX(0)
+        }
+
+        100% {
+            transform: translateX(50px)
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Gathersdom</h1>
+        <blockquote>
+            "Education is the most powerful weapon which you can use to change the world."
+            <footer>
+                <em> - Nelson Mandela</em>
+            </footer>
+        </blockquote>
+    </header>
+    <p>
+        <ul>
+            <h2>Math</h2>
+            <li><a href="https://www.maths-france.fr/MathSup/Cours/index.php" target="_blank"
+                    rel="noopener noreferrer">[Maths-France] - Cours de Maths Sup</a></li>
+            <li><a href="http://exo7.emath.fr/" target="_blank" rel="noopener noreferrer">[Exo7] - Cours de Maths
+                    Sup</a></li>
+            <li><a href="https://www.maths.cam.ac.uk/undergrad/files/studyskills.pdf" target="_blank"
+                    rel="noopener noreferrer">[Cambridge] - Study skills in mathematics</a></li>
+            <h2>SQL</h2>
+            <li><a href="https://sqlbolt.com/" target="_blank" rel="noopener noreferrer">[SQLBolt] - Cours de SQL</a>
+            </li>
+        </ul>
+    </p>
+</body>
+
+</html>
