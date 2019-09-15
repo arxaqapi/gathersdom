@@ -9,6 +9,7 @@
 </head>
 <style>
     body {
+        background: #e6e6e6;
         margin: 1em auto;
         max-width: 40em;
         padding: 0 .62em;
@@ -41,8 +42,20 @@
         }
     }
 
-    a {
-        text-decoration: none;
+    a:active,a:hover,a:link,a:visited{
+    color: #7e5600;
+    text-decoration:none;
+    }
+    footer > a {
+        color: #414141 !important;
+        border-bottom: 1px solid black;
+    }
+    footer > span {
+        display: inline-block;
+        transform: rotate(180deg);
+    }
+    h2{
+        margin-left: -32px;
     }
 </style>
 
@@ -58,82 +71,109 @@
     </header>
     <p>
         <ul>
-            <h2>Math</h2>
-            <li><a href="https://www.maths-france.fr/MathSup/Cours/index.php" target="_blank"rel="noopener noreferrer">[Maths-France] - Cours de Maths Sup</a></li>
-            <li><a href="http://exo7.emath.fr/" target="_blank" rel="noopener noreferrer">[Exo7] - Cours de Maths Sup</a></li>
-            <li><a href="https://www.maths.cam.ac.uk/undergrad/files/studyskills.pdf" target="_blank" rel="noopener noreferrer">[Cambridge] - Study skills in mathematics</a></li>
-            <li><a href="https://trevtutor.com/discretemath/discretemath1/" target="_blank" rel="noopener noreferrer">[TrevTutor] - Discrete Math 1</a></li>
-            <h3>Machine Learning</h3>
-            <li><a href="https://www.coursera.org/learn/machine-learning/" target="_blank" rel="noopener noreferrer">[Standford] - Machine Learning By Andrew Ng</a></li>
-            <h2>SQL</h2>
-            <li><a href="https://sqlbolt.com/" target="_blank" rel="noopener noreferrer">[SQLBolt] - Cours de SQL</a></li>
-            <li><a href="http://filldb.info/" target="_blank" rel="noopener noreferrer">[Filldb] - Dummy data for Mysql db</a></li>
-            <li><a href="https://sqlitebrowser.org/" target="_blank" rel="noopener noreferrer">[SQlite] - Browser for sqlite db</a></li>
-            <li><a href="https://sql.sh/" target="_blank" rel="noopener noreferrer">[Learning] - SQL course</a></li>
-            <h2>CyberSec</h2>
-            <li><a href="http://wseas.us/e-library/conferences/2012/SaintMalo/SITE/SITE-03.pdf" target="_blank" rel="noopener noreferrer">[Paper] - Secret message in a ping</a></li>
-            <li><a href="https://rawgit.com/mikesamuel/sanitized-jquery-templates/trunk/safetemplate.html#problem_definition" target="_blank" rel="noopener noreferrer">[Web-XSS] - Using type inference to make web templates robust against XSS</a></li>
-            <li><a href="http://repository.root-me.org/RFC/EN%20-%20rfc2616.txt" target="_blank" rel="noopener noreferrer">[RFC] - 2616 - HTTP/1.1</a></li>
-            <li><a href="https://www.garykessler.net/library/file_sigs.html" target="_blank" rel="noopener noreferrer">[HEX] - File Signatures Table</a></li>
-            <li><a href="https://ctf101.org/" target="_blank" rel="noopener noreferrer">[CTF] - ctf 101 resources</a></li>
-            <h2>Programming</h2>
-            <h3>Learning</h3>
-            <li><a href="https://sarabander.github.io/sicp/" target="_blank" rel="noopener noreferrer">[Book] - MIT Structure and Interpretation of Computer Programs</a></li>
-            <li><a href="https://algs4.cs.princeton.edu/lectures/" target="_blank" rel="noopener noreferrer">[Princeton] - Notes for <em>Algorithms 4th edition</em></a></li>
-            <li><a href="https://www.coursera.org/learn/programming-languages" target="_blank" rel="noopener noreferrer">[UofWashington] - Programming Languages (functional), Part A</a></li>
-            <li><a href="https://sites.google.com/site/prologsite/prolog-problems/1" target="_blank" rel="noopener noreferrer">[99 prob] - Prolog problem list</a></li>
-            <li><a href="https://ocaml.org/learn/tutorials/99problems.html" target="_blank" rel="noopener noreferrer">[99 Prob] - Solved in OCaml</a></li>
-            <li><a href="http://www.ic.unicamp.br/~meidanis/courses/mc336/2006s2/funcional/L-99_Ninety-Nine_Lisp_Problems.html" target="_blank" rel="noopener noreferrer">[99 Prob] - Solved in Lisp</a></li>
-            <li><a href="https://learnxinyminutes.com/" target="_blank" rel="noopener noreferrer">[XY] - Learn X in Y minutes</a></li>
-            <li><a href="http://rosettacode.org/wiki/Category:Programming_Tasks" target="_blank" rel="noopener noreferrer">[Rosettacode] - Problems in all programming languages</a></li>
-            <li><a href="https://benchmarksgame-team.pages.debian.net/benchmarksgame/index.html" target="_blank" rel="noopener noreferrer">[Benchmarck] - the Computer Language Benchmarcks Game</a></li>
-            <li><a href="https://books.goalkicker.com/" target="_blank" rel="noopener noreferrer">[Book] - Programming notes for professionals</a></li>
-            <li><a href="https://adventofcode.com/" target="_blank" rel="noopener noreferrer">[Event] - Advent of code</a></li>
-            <li><a href="https://viewsourcecode.org/snaptoken/kilo/03.rawInputAndOutput.html" target="_blank" rel="noopener noreferrer">[Proj] - Text Editor</a></li>
-            <li><a href="https://vt100.net/docs/vt100-ug/chapter3.html#ED" target="_blank" rel="noopener noreferrer">[Proj] - VT100 terminal</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Terminfo" target="_blank" rel="noopener noreferrer">[Proj] - Terminfo</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Ncurses" target="_blank" rel="noopener noreferrer">[Proj] - Ncurses: text based UI</a></li>
-            <li><a href="https://castel.dev/post/lecture-notes-1/" target="_blank" rel="noopener noreferrer">[Vimtex] - ake notes in mathematics lectures using LaTeX and Vim</a></li>
-            <h3>Game Dev</h3>
-            <li><a href="https://www.reddit.com/r/gamedev/" target="_blank" rel="noopener noreferrer">[reddit] - Game Dev sub</a></li>
-            <li><a href="https://www.reddit.com/r/godot/comments/an0iq5/godot_tutorials_list_of_video_and_written/" target="_blank" rel="noopener noreferrer">[Godot] - Tutorials List for Godot</a></li>
-            <li><a href="https://github.com/Calinou/awesome-godot" target="_blank" rel="noopener noreferrer">[Godot] - Awesome Godot</a></li>
-            <li><a href="https://www.youtube.com/channel/UCla6BhPwo5zGal6vR5le4YA/videos" target="_blank" rel="noopener noreferrer">[Yt] - Godot tutorial, UmaiPixel</a></li>
-            <h3>Web Dev</h3>
-            <li><a href="https://12factor.net/" target="_blank" rel="noopener noreferrer">[12f] - The twelve-factor app</a></li>
-            <li><a href="https://a11yproject.com/" target="_blank" rel="noopener noreferrer">[a11] - The a11 Project, web accessibility </a></li>
-            <li><a href="https://bitsofco.de/the-accessibility-cheatsheet/" target="_blank" rel="noopener noreferrer">[UX] - The Accesibility Cheatsheet</a></li>
-            <li><a href="https://www.theodinproject.com/" target="_blank" rel="noopener noreferrer">[Learning] - The Odin Project</a></li>
-            <li><a href="https://compressor.io/compress" target="_blank" rel="noopener noreferrer">[service] - Compressor for pics</a></li>
-            <h3>Low-Level</h3>
-            <li><a href="https://www.nand2tetris.org/" target="_blank" rel="noopener noreferrer">[Architecture] - NAND to tetris</a></li>
-            <h3>Go</h3>
-            <li><a href="https://gobyexample.com/" target="_blank" rel="noopener noreferrer">[Learning] - Go by examples</a></li>
-            <li><a href="https://quii.gitbook.io/learn-go-with-tests/" target="_blank" rel="noopener noreferrer">[Tests] - Learn Go with tests</a></li>
-            <li><a href="https://stackoverflow.com/tags/go/info" target="_blank" rel="noopener noreferrer">[StOv]Go infos</a></li>
-            <li><a href="https://exercism.io/tracks/go" target="_blank" rel="noopener noreferrer">[Learning] - Go exercices</a></li>
-            <li><a href="https://gophercises.com/" target="_blank" rel="noopener noreferrer">[Learning] - Gophercises</a></li>
-            <li><a href="https://astaxie.gitbooks.io/build-web-application-with-golang/content/en/" target="_blank" rel="noopener noreferrer">[Web] - Build web apps in go</a></li>
-            <li><a href="https://gowebexamples.com/" target="_blank" rel="noopener noreferrer">[Web] - go code snippets for web apps</a></li>
-            <li><a href="https://medium.com/@nate510/don-t-use-go-s-default-http-client-4804cb19f779" target="_blank" rel="noopener noreferrer">[Article] - go's default http client</a></li>
-            <li><a href="https://medium.com/@boobo94/web-service-architecture-for-golang-developers-a4147b8141ff" target="_blank" rel="noopener noreferrer">[Web]Web service architecture for go</a></li>
-            <h3>Network</h3>
-            <li><a href="https://zestedesavoir.com/tutoriels/2789/les-reseaux-de-zero/" target="_blank" rel="noopener noreferrer">[Course] - Networks from 0</a></li>
-            <h3>System</h3>
-            <li><a href="https://www.linode.com/docs/quick-answers/linux/start-service-at-boot/" target="_blank" rel="noopener noreferrer">[Linux] - Create services at boot</a></li>
-            <h3>3D</h3>
-            <li><a href="http://cpp-rendering.io/" target="_blank" rel="noopener noreferrer">[Cpp] - Blog about 3d rendering</a></li>
-            <h2>Server Side</h2>
-            <li><a href="http://nginx.org/en/docs/beginners_guide.html" target="_blank" rel="noopener noreferrer">[nginx] - Beginners guide</a></li>
-            <li><a href="https://riptutorial.com/Download/nginx-fr.pdf" target="_blank" rel="noopener noreferrer">[nginx] - Learn nginx</a></li>
-            <h2>Design</h2>
-            <li><a href="https://twitter.com/steveschoger" target="_blank" rel="noopener noreferrer">[twitter] - Refractoring UI</a></li>
-            <h3>Pixel Art</h3>
-            <li><a href="https://www.reddit.com/r/PixelArt/" target="_blank" rel="noopener noreferrer">[reddit] - PixelArt sub</a></li>
-            <li><a href="https://makegames.tumblr.com/post/42648699708/pixel-art-tutorial" target="_blank" rel="noopener noreferrer">[tutorial] - Pixel Art for games tutorial</a></li>
-            <li><a href="https://lospec.com/palette-list" target="_blank" rel="noopener noreferrer">[colors] - Palette List</a></li>
+            <h2>::Math</h2>
+                <h3>:Courses</h3>
+                    <li><a href="https://www.maths-france.fr/MathSup/Cours/index.php" target="_blank"rel="noopener noreferrer">[Maths-France] - Cours de Maths Sup</a></li>
+                    <li><a href="http://exo7.emath.fr/" target="_blank" rel="noopener noreferrer">[Exo7] - Cours de Maths Sup</a></li>
+                    <li><a href="https://www.maths.cam.ac.uk/undergrad/files/studyskills.pdf" target="_blank" rel="noopener noreferrer">[Cambridge] - Study skills in mathematics</a></li>
+                    <li><a href="https://trevtutor.com/discretemath/discretemath1/" target="_blank" rel="noopener noreferrer">[TrevTutor] - Discrete Math 1</a></li>
+                <h3>Machine Learning</h3>
+                    <li><a href="https://www.coursera.org/learn/machine-learning/" target="_blank" rel="noopener noreferrer">[Standford] - Machine Learning By Andrew Ng</a></li>
+                    <li><a href="https://machinelearningmastery.com/python-machine-learning-mini-course/" target="_blank" rel="noopener noreferrer">[Python] - Machine Learning Python Mini-Course</a></li>
+                    <li><a href="https://github.com/awesomedata/awesome-public-datasets" target="_blank" rel="noopener noreferrer">[Awesome] - Public Datasets</a></li>
+            <h2>::Programming</h2>
+                <h3>:Languages</h3>
+                    <li><a href="https://sarabander.github.io/sicp/" target="_blank" rel="noopener noreferrer">[Book] - MIT Structure and Interpretation of Computer Programs</a></li>
+                    <li><a href="https://algs4.cs.princeton.edu/lectures/" target="_blank" rel="noopener noreferrer">[Princeton] - Notes for <em>Algorithms 4th edition</em></a></li>
+                    <li><a href="https://sites.google.com/site/prologsite/prolog-problems/1" target="_blank" rel="noopener noreferrer">[99 prob] - Prolog problem list</a></li>
+                    <li><a href="https://ocaml.org/learn/tutorials/99problems.html" target="_blank" rel="noopener noreferrer">[99 Prob] - Solved in OCaml</a></li>
+                    <li><a href="http://www.ic.unicamp.br/~meidanis/courses/mc336/2006s2/funcional/L-99_Ninety-Nine_Lisp_Problems.html" target="_blank" rel="noopener noreferrer">[99 Prob] - Solved in Lisp</a></li>
+                    <li><a href="https://learnxinyminutes.com/" target="_blank" rel="noopener noreferrer">[XY] - Learn X in Y minutes</a></li>
+                    <li><a href="http://rosettacode.org/wiki/Category:Programming_Tasks" target="_blank" rel="noopener noreferrer">[Rosettacode] - Problems in all programming languages</a></li>
+                    <li><a href="https://benchmarksgame-team.pages.debian.net/benchmarksgame/index.html" target="_blank" rel="noopener noreferrer">[Benchmarck] - the Computer Language Benchmarcks Game</a></li>
+                    <li><a href="https://books.goalkicker.com/" target="_blank" rel="noopener noreferrer">[Book] - Programming notes for professionals</a></li>
+                    <li><a href="https://github.com/prakhar1989/awesome-courses" target="_blank" rel="noopener noreferrer">[courses] - Awesome CS courses</a></li>
+                    <li><a href="https://www.bash.academy/" target="_blank" rel="noopener noreferrer">[Bash] - Bash Academy</a></li>
+                    <li><a href="https://www.cprogramming.com/" target="_blank" rel="noopener noreferrer">[C/C++] - Learn C and C++ Programming</a></li>
+                    <li><a href="https://www.learnenough.com/courses" target="_blank" rel="noopener noreferrer">[courses] - Learn Enough to be dangerous</a></li>
+
+                    <h4>Go</h4>
+                        <li><a href="https://gobyexample.com/" target="_blank" rel="noopener noreferrer">[Learning] - Go by examples</a></li>
+                        <li><a href="https://quii.gitbook.io/learn-go-with-tests/" target="_blank" rel="noopener noreferrer">[Tests] - Learn Go with tests</a></li>
+                        <li><a href="https://stackoverflow.com/tags/go/info" target="_blank" rel="noopener noreferrer">[StOv]Go infos</a></li>
+                        <li><a href="https://exercism.io/tracks/go" target="_blank" rel="noopener noreferrer">[Learning] - Go exercices</a></li>
+                        <li><a href="https://gophercises.com/" target="_blank" rel="noopener noreferrer">[Learning] - Gophercises</a></li>
+                        <li><a href="https://astaxie.gitbooks.io/build-web-application-with-golang/content/en/" target="_blank" rel="noopener noreferrer">[Web] - Build web apps in go</a></li>
+                        <li><a href="https://gowebexamples.com/" target="_blank" rel="noopener noreferrer">[Web] - go code snippets for web apps</a></li>
+                        <li><a href="https://medium.com/@nate510/don-t-use-go-s-default-http-client-4804cb19f779" target="_blank" rel="noopener noreferrer">[Article] - go's default http client</a></li>
+                        <li><a href="https://medium.com/@boobo94/web-service-architecture-for-golang-developers-a4147b8141ff" target="_blank" rel="noopener noreferrer">[Web]Web service architecture for go</a></li>
+
+                <h3>:GameDev</h3>
+                    <li><a href="https://www.reddit.com/r/gamedev/" target="_blank" rel="noopener noreferrer">[reddit] - Game Dev sub</a></li>
+                    <li><a href="https://www.reddit.com/r/godot/comments/an0iq5/godot_tutorials_list_of_video_and_written/" target="_blank" rel="noopener noreferrer">[Godot] - Tutorials List for Godot</a></li>
+                    <li><a href="https://github.com/Calinou/awesome-godot" target="_blank" rel="noopener noreferrer">[Godot] - Awesome Godot</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCla6BhPwo5zGal6vR5le4YA/videos" target="_blank" rel="noopener noreferrer">[Godot] - Godot tutorial, UmaiPixel</a></li>
+
+                <h3>:Graphical Computing</h3>
+                    <li><a href="http://cpp-rendering.io/" target="_blank" rel="noopener noreferrer">[3d] - Blog about 3d rendering</a></li>
+
+                <h3>:Front-End</h3>
+                    <li><a href="https://12factor.net/" target="_blank" rel="noopener noreferrer">[12f] - The twelve-factor app</a></li>
+                    <li><a href="https://bitsofco.de/the-accessibility-cheatsheet/" target="_blank" rel="noopener noreferrer">[UX] - The Accesibility Cheatsheet</a></li>
+                    <li><a href="https://www.theodinproject.com/" target="_blank" rel="noopener noreferrer">[Learning] - The Odin Project</a></li>
+                    <li><a href="https://compressor.io/compress" target="_blank" rel="noopener noreferrer">[service] - Picture compressor</a></li>
+                    
+                <h3>:Back-End</h3>
+                    <li><a href="http://nginx.org/en/docs/beginners_guide.html" target="_blank" rel="noopener noreferrer">[Server] - Beginners guide</a></li>
+                    <li><a href="https://riptutorial.com/Download/nginx-fr.pdf" target="_blank" rel="noopener noreferrer">[Server] - Learn nginx</a></li>
+                    <li><a href="https://www.linode.com/docs/quick-answers/linux/start-service-at-boot/" target="_blank" rel="noopener noreferrer">[System] - Create services at boot</a></li>
+                    <li><a href="https://sqlbolt.com/" target="_blank" rel="noopener noreferrer">[SQL] - Cours de SQL</a></li>
+                    <li><a href="http://filldb.info/" target="_blank" rel="noopener noreferrer">[SQL] - Dummy data for Mysql db</a></li>
+                    <li><a href="https://sqlitebrowser.org/" target="_blank" rel="noopener noreferrer">[SQL] - Browser for sqlite db</a></li>
+                    <li><a href="https://sql.sh/" target="_blank" rel="noopener noreferrer">[SQL] - SQL course</a></li>
+                    <li><a href="http://www.databasetestdata.com/" target="_blank" rel="noopener noreferrer">[DB] - Test Data for Databases</a></li>
+
+                <h3>:Network</h3>
+                    <li><a href="https://zestedesavoir.com/tutoriels/2789/les-reseaux-de-zero/" target="_blank" rel="noopener noreferrer">[Course] - Networks from 0</a></li>
+                <h3>:Projects</h3>
+                    <li><a href="https://viewsourcecode.org/snaptoken/kilo/03.rawInputAndOutput.html" target="_blank" rel="noopener noreferrer">[Proj] - Text Editor</a></li>
+                    <li><a href="https://vt100.net/docs/vt100-ug/chapter3.html#ED" target="_blank" rel="noopener noreferrer">[Proj] - VT100 terminal</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Terminfo" target="_blank" rel="noopener noreferrer">[Proj] - Terminfo</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Ncurses" target="_blank" rel="noopener noreferrer">[Proj] - Ncurses: text based UI</a></li>
+                <h3>:Other stuff</h3>
+                    <li><a href="https://adventofcode.com/" target="_blank" rel="noopener noreferrer">[Event] - Advent of code</a></li>
+                    <li><a href="https://castel.dev/post/lecture-notes-1/" target="_blank" rel="noopener noreferrer">[Latex] - Take notes in mathematics lectures using LaTeX and Vim</a></li>
+                    <li><a href="https://www.nand2tetris.org/" target="_blank" rel="noopener noreferrer">[Architecture] - NAND to tetris</a></li>
+
+            <h2>::CyberSec</h2>
+                <li><a href="http://phrack.org/issues/7/3.html#article" target="_blank" rel="noopener noreferrer">[Phrack] - Hacker's Manifesto</a></li>
+                <li><a href="http://wseas.us/e-library/conferences/2012/SaintMalo/SITE/SITE-03.pdf" target="_blank" rel="noopener noreferrer">[Paper] - Secret message in a ping</a></li>
+                <li><a href="https://rawgit.com/mikesamuel/sanitized-jquery-templates/trunk/safetemplate.html#problem_definition" target="_blank" rel="noopener noreferrer">[Web-XSS] - Using type inference to make web templates robust against XSS</a></li>
+                <li><a href="http://repository.root-me.org/RFC/EN%20-%20rfc2616.txt" target="_blank" rel="noopener noreferrer">[RFC] - 2616 - HTTP/1.1</a></li>
+                <li><a href="https://www.garykessler.net/library/file_sigs.html" target="_blank" rel="noopener noreferrer">[HEX] - File Signatures Table</a></li>
+                <li><a href="https://ctf101.org/" target="_blank" rel="noopener noreferrer">[CTF] - ctf 101 resources</a></li>
+                <li><a href="http://repository.root-me.org/" target="_blank" rel="noopener noreferrer">[Resources] - Root-me repo</a></li>
+                <li><a href="http://archive.parrotsec.org/parrot/misc/openbooks/" target="_blank" rel="noopener noreferrer">[Resources] - Parrot archives Open Books</a></li>
+                <li><a href="https://www.exploit-db.com/" target="_blank" rel="noopener noreferrer">[Resources] - Exploit DB</a></li>
+                <li><a href="http://www.pentest-standard.org/index.php/Main_Page" target="_blank" rel="noopener noreferrer">[Resources] - Pentest Standart</a></li>
+                <li><a href="https://github.com/sbilly/awesome-security" target="_blank" rel="noopener noreferrer">[awesome] - Awesome Security</a></li>
+                <li><a href="https://github.com/enaqx/awesome-pentest" target="_blank" rel="noopener noreferrer">[awesome] - Awesome Pentest</a></li>
+                <h3>:Training Ground</h3>
+                    <li><a href="https://overthewire.org/wargames/" target="_blank" rel="noopener noreferrer">[VM] - Over The Wire</a></li>
+                    <li><a href="https://www.root-me.org/" target="_blank" rel="noopener noreferrer">[x] - Root-me</a></li>
+                    <li><a href="https://www.hackthebox.eu/" target="_blank" rel="noopener noreferrer">[VM] - Hack the box</a></li>
+                    <li><a href="https://www.vulnhub.com/" target="_blank" rel="noopener noreferrer">[?] - VulnHub</a></li>
+            <h2>::Design</h2>
+                <h3>:Pixel Art</h3>
+                    <li><a href="https://www.reddit.com/r/PixelArt/" target="_blank" rel="noopener noreferrer">[reddit] - PixelArt sub</a></li>
+                    <li><a href="https://makegames.tumblr.com/post/42648699708/pixel-art-tutorial" target="_blank" rel="noopener noreferrer">[tutorial] - Pixel Art for games tutorial</a></li>
+                    <li><a href="https://lospec.com/palette-list" target="_blank" rel="noopener noreferrer">[colors] - Palette List</a></li>
+                <h3>:UI/UX</h3>
+                    <li><a href="https://twitter.com/steveschoger" target="_blank" rel="noopener noreferrer">[UI] - Refractoring UI</a></li>
+
         </ul>
     </p>
+    <footer><span>&copy;</span><a href="http://github.com/arxaqapi" target="_blank" rel="noopener noreferrer">ArxaQapi</a></footer>
 </body>
 
 </html>
